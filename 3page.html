@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 , shrink-to-fit=No"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,IE=5" />
+    <meta name="description" content="Florin Fiath Portfolio Page" />
+    <meta
+      name="keywords"
+      content="Web Development, frontend, backend development"
+    />
+
+    <title>Florin Fiath Portfolio Page</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-transparent">
+        <button
+          class="navbar-toggler float-sm-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"
+            ><img src="/Images/iconmonstr-menu-1.svg" alt="navigation icon"
+          /></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center text-deco"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link nav-text-color"
+                href="http://127.0.0.1:5500/1page.html"
+                alt="first page"
+                title="Return to first page"
+                target="_blank"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-text-color"
+                href="http://127.0.0.1:5500/2page.html"
+                alt="about me"
+                title="About me"
+                target="_blank"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-text-color"
+                href="http://127.0.0.1:5500/2page.html"
+                alt="My skills"
+                title="See my skills"
+                target="_blank"
+                >SKILLS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text-color" href="#contact" alt="contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+<section class="mb-4">
+    <h2 class="h2-responsive font-weight-bold text-center my-4">Contact me</h2>
+<div class="row form-align">
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+<div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+    </div>
+</section>
+ </main>
+    <footer>
+      <div class="bg-transparent navbar navbar-expand-sm footer-align">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar navbar-nav contact-align">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/florinfiath" alt="See my GitHub page" title="See github page" target="_blank"
+                ><img
+                  src="/Images/iconmonstr-github-1.svg"
+                  alt="github page"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://de.linkedin.com/"alt="See my Linkedin page" title="See Linkedin page" target="_blank"
+                ><img
+                  src="/Images/iconmonstr-linkedin-3.svg"
+                  alt="linkedin page"
+                  target="_blank"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/"alt="See my Facebook page" title="See Facebook page" target="_blank"
+                ><img
+                  src="/Images/iconmonstr-facebook-3.svg"
+                  alt="facebook page"
+                  target="_blank"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/3page.html"alt="Send me a message"title="Write me a message" target="_blank"
+                ><img
+                  src="/Images/iconmonstr-email-2.svg"
+                  alt="contact page"
+                  target="_blank"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="navbar-toggler float-sm-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><img src="/Images/iconmonstr-globe-5.svg" alt="navigation icon"
+          /></span>
+        </button>
+        <div>
+          <span>&copy 2020 FF. All rights reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
